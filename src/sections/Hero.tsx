@@ -90,13 +90,13 @@ export const Hero = () => {
                 px={3}
                 py={1.5}
                 borderRadius="full"
-                bg="rgba(14,165,255,0.10)"
+                bg="accent.warm.bg"
                 borderWidth="1px"
-                borderColor="border.accent"
+                borderColor="border.warm"
                 backdropFilter="blur(10px)"
               >
-                <Box boxSize={2} borderRadius="full" bg="whatsapp.400" boxShadow="0 0 12px #34D399" />
-                <Text fontSize="xs" fontWeight="700" letterSpacing="0.12em" textTransform="uppercase" color="brand.200">
+                <Box boxSize={2} borderRadius="full" bg="whatsapp.400" boxShadow="0 0 10px rgba(52,211,153,0.7)" />
+                <Text fontSize="xs" fontWeight="700" letterSpacing="0.12em" textTransform="uppercase" color="accent.warm.soft">
                   Disponible hoy · CABA y GBA
                 </Text>
               </HStack>
