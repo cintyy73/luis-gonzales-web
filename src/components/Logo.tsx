@@ -18,12 +18,14 @@ export const Logo = ({ size = 'md', showText = true }: Props) => {
           boxSize={dim}
           borderRadius="xl"
           overflow="hidden"
+          bg="black"
           boxShadow="glowSoft"
         >
           <Image
-            src="/logo.svg"
+            src="/logo.png"
             alt="Luis Gonzalez - servicio tecnico"
             boxSize="100%"
+            objectFit="cover"
             display="block"
             loading="eager"
           />
