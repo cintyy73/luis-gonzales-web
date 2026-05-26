@@ -9,3 +9,8 @@ dist-ssr
 !.vscode/extensions.json
 *.log
 .idea
+
+# tsc -b / typescript build artefactos
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
