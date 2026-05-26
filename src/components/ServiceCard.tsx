@@ -58,11 +58,11 @@ export const ServiceCard = ({ service }: Props) => {
             fontWeight="700"
             letterSpacing="0.1em"
             textTransform="uppercase"
-            color="brand.200"
-            bg="rgba(14,165,255,0.10)"
+            color="accent.warm.soft"
+            bg="accent.warm.bg"
             borderRadius="full"
             borderWidth="1px"
-            borderColor="border.accent"
+            borderColor="border.warm"
           >
             Destacado
           </Box>
