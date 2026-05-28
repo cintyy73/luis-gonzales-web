@@ -1,6 +1,7 @@
 import { Hero } from '@/sections/Hero'
 import { Services } from '@/sections/Services'
 import { WhyUs } from '@/sections/WhyUs'
+import { Brands } from '@/sections/Brands'
 import { Gallery } from '@/sections/Gallery'
 import { Testimonials } from '@/sections/Testimonials'
 import { Zones } from '@/sections/Zones'
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Hero />
       <Services />
       <WhyUs />
+      <Brands />
       <Gallery />
       <Testimonials />
       <Zones />

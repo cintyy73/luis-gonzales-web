@@ -57,6 +57,13 @@ export interface WhyUsItem {
   icon: IconType
 }
 
+export interface Brand {
+  id: string
+  name: string
+  category: 'aires' | 'lavarropas' | 'multi'
+  logoUrl?: string
+}
+
 export interface ContactFormValues {
   name: string
   phone: string
