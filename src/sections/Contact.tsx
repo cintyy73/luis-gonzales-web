@@ -138,11 +138,17 @@ export const Contact = () => {
                     >
                       <Icon size={20} />
                     </Box>
-                    <Box>
+                    <Box minW={0} flex={1}>
                       <Text fontSize="2xs" color="fg.subtle" letterSpacing="0.1em" textTransform="uppercase" fontWeight="700">
                         {item.label}
                       </Text>
-                      <Text fontWeight="600" color="white" fontSize={{ base: 'sm', md: 'md' }}>
+                      <Text
+                        fontWeight="600"
+                        color="white"
+                        fontSize={{ base: 'sm', md: 'md' }}
+                        wordBreak="break-word"
+                        overflowWrap="anywhere"
+                      >
                         {item.value}
                       </Text>
                     </Box>
