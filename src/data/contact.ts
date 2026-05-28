@@ -1,7 +1,7 @@
 export const CONTACT = {
   name: 'Luis Gonzalez',
   brand: 'Luis Gonzalez',
-  tagline: 'Servicio Tecnico Premium',
+  tagline: 'Tecnico certificado UTN · 16 años de experiencia',
 
   phone: '11 3327-5539',
   phoneIntl: '+5491133275539',

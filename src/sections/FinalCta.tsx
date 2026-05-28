@@ -8,7 +8,7 @@ import { fadeInUp } from '@/animations/variants'
 
 const MotionBox = motion.create(Box)
 
-const CTA_WA = 'Hola Luis, quiero pedir un presupuesto sin cargo.'
+const CTA_WA = 'Hola Luis, quiero coordinar una visita por WhatsApp.'
 
 export const FinalCta = () => {
   return (
@@ -61,7 +61,7 @@ export const FinalCta = () => {
               </Box>
             </Heading>
             <Text fontSize={{ base: 'md', md: 'lg' }} color="fg.muted" maxW="2xl">
-              Coordina visita por WhatsApp y resolvemos hoy o el dia siguiente. Presupuesto sin cargo, garantia escrita.
+              Coordina visita por WhatsApp y resolvemos hoy o el dia siguiente. Trabajos con garantia escrita.
             </Text>
 
             <HStack gap={3} flexWrap="wrap" justify="center" mt={2}>

@@ -97,7 +97,7 @@ export const Contact = () => {
       <Container position="relative" zIndex={1}>
         <SectionTitle
           eyebrow="Contacto"
-          title="Pedi tu presupuesto sin cargo"
+          title="Coordina tu visita en minutos"
           subtitle="Respondemos por WhatsApp en minutos. Tambien podes completar el formulario y nos comunicamos a la brevedad."
         />
 

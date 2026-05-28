@@ -57,8 +57,8 @@ export const TESTIMONIALS: Testimonial[] = [
     zone: 'Vicente Lopez, Zona Norte',
     rating: 5,
     comment:
-      'Tecnico de confianza. Te explica todo, no te quiere cobrar de mas y trabaja con responsabilidad.',
-    service: 'Reparacion de Secarropas',
+      'Tecnico de confianza. Te explica todo, no te quiere cobrar de mas y trabaja con responsabilidad. Me reparo el microondas en el dia.',
+    service: 'Reparacion de Microondas',
     date: 'Diciembre 2025',
   },
 ]

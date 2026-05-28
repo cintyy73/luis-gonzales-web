@@ -23,8 +23,8 @@ export const WHY_US: WhyUsItem[] = [
   },
   {
     id: 'experiencia',
-    title: 'Experiencia Comprobada',
-    description: 'Mas de 10 años atendiendo hogares, oficinas y comercios en CABA y GBA.',
+    title: 'Certificado UTN · 16 años',
+    description: 'Instalador y reparador certificado por la UTN, con 16 años de experiencia en hogares, oficinas y comercios de CABA y GBA.',
     icon: TbAward,
   },
   {

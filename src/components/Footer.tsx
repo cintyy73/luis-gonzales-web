@@ -44,7 +44,7 @@ export const Footer = () => {
           <VStack align="flex-start" gap={4}>
             <Logo size="md" />
             <Text color="fg.muted" fontSize="sm" lineHeight="1.7">
-              Servicio tecnico profesional de aires acondicionados, lavarropas y secarropas en CABA y GBA. Atencion rapida y trabajos garantizados.
+              Tecnico certificado UTN con 16 años de experiencia en aires acondicionados, lavarropas, microondas y hornos electricos. CABA y GBA, atencion rapida y trabajos garantizados.
             </Text>
             <HStack gap={2}>
               <IconButton

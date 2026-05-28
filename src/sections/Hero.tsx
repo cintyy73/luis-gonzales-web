@@ -131,8 +131,8 @@ export const Hero = () => {
               maxW="xl"
               lineHeight="1.7"
             >
-              Instalacion, reparacion y mantenimiento de equipos de aire acondicionado, lavarropas y secarropas con atencion rapida a domicilio.
-              Trabajos garantizados, presupuesto sin cargo.
+              Instalacion, reparacion y mantenimiento de aires acondicionados split, carga de gas, reparacion de lavarropas, microondas y hornos electricos.
+              Tecnico certificado UTN con 16 años de experiencia.
             </MotionText>
 
             <MotionStack variants={fadeInUp} direction={{ base: 'column', sm: 'row' }} gap={3} pt={2}>
@@ -191,7 +191,7 @@ export const Hero = () => {
               <HStack gap={2.5} flexWrap="wrap">
                 <TrustBadge label="Atencion rapida" />
                 <TrustBadge label="Garantia escrita" />
-                <TrustBadge label="Tecnico especializado" />
+                <TrustBadge label="Certificado UTN" />
                 <TrustBadge label="Domicilio CABA y GBA" />
               </HStack>
             </MotionBox>
@@ -244,7 +244,7 @@ export const Hero = () => {
                     Luis Gonzalez
                   </Text>
                   <Text fontSize="sm" color="fg.muted" mt={1}>
-                    Tecnico matriculado · 10+ años de experiencia
+                    Certificado UTN · 16+ años de experiencia
                   </Text>
                 </Box>
               </Box>
