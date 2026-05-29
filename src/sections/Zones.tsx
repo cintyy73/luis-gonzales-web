@@ -4,9 +4,11 @@ import { TbMapPin } from 'react-icons/tb'
 import { Container } from '@/components/Container'
 import { SectionTitle } from '@/components/SectionTitle'
 import { GlassCard } from '@/components/GlassCard'
+import { CoverageMap } from '@/components/CoverageMap'
 import { ZONES } from '@/data/zones'
 import { fadeInUp, staggerContainer } from '@/animations/variants'
 
+const MotionBox = motion.create(Box)
 const MotionGrid = motion.create(SimpleGrid)
 const MotionGlass = motion.create(GlassCard)
 
@@ -19,6 +21,16 @@ export const Zones = () => {
           title="Cobertura en CABA y todo el Gran Buenos Aires"
           subtitle="Atendemos personalmente en los siguientes barrios y localidades. ¿No ves tu zona? Consultanos por WhatsApp."
         />
+
+        <MotionBox
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.15 }}
+          mb={{ base: 8, md: 12 }}
+        >
+          <CoverageMap />
+        </MotionBox>
 
         <MotionGrid
           columns={{ base: 1, md: 2, lg: 4 }}
