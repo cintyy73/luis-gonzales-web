@@ -51,16 +51,21 @@ export const GalleryItem = ({ item, onClick }: Props) => {
         className="overlay"
         position="absolute"
         inset={0}
-        bgGradient="linear-gradient(to top, rgba(5,14,32,0.92) 0%, rgba(5,14,32,0) 60%)"
-        opacity={0.4}
+        bgGradient="linear-gradient(to top, rgba(5,14,32,0.95) 0%, rgba(5,14,32,0.35) 45%, rgba(5,14,32,0) 75%)"
+        opacity={0.85}
         transition="opacity 0.3s ease"
         display="flex"
         alignItems="flex-end"
         p={4}
       >
         {item.description && (
-          <Text color="black"
-          fontSize="sm" fontWeight="600" lineHeight="1.4">
+          <Text
+            color="white"
+            fontSize="sm"
+            fontWeight="600"
+            lineHeight="1.4"
+            textShadow="0 1px 6px rgba(0,0,0,0.85), 0 0 2px rgba(0,0,0,0.7)"
+          >
             {item.description}
           </Text>
         )}
