@@ -1,6 +1,6 @@
-# Luis Gonzalez — Servicio Tecnico
+# Luis Gonzalez — Servicio Técnico
 
-Sitio web profesional para captacion de clientes de servicio tecnico:
+Sitio web profesional para captacion de clientes de servicio técnico:
 
 - Instalacion, reparacion y mantenimiento de aires acondicionados
 - Carga de gas refrigerante

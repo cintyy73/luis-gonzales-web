@@ -59,7 +59,8 @@ export const GalleryItem = ({ item, onClick }: Props) => {
         p={4}
       >
         {item.description && (
-          <Text color="white" fontSize="sm" fontWeight="600" lineHeight="1.4">
+          <Text color="black"
+          fontSize="sm" fontWeight="600" lineHeight="1.4">
             {item.description}
           </Text>
         )}

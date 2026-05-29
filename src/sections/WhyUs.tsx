@@ -24,7 +24,7 @@ export const WhyUs = () => {
       <Container>
         <SectionTitle
           eyebrow="Por que elegirnos"
-          title="Tecnico de confianza, resultados garantizados"
+          title="Técnico de confianza, resultados garantizados"
           subtitle="Mas de una decada de experiencia atendiendo personalmente cada servicio. Sin intermediarios ni call centers."
         />
 

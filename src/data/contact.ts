@@ -1,7 +1,7 @@
 export const CONTACT = {
   name: 'Luis Gonzalez',
   brand: 'Luis Gonzalez',
-  tagline: 'Tecnico certificado UTN · 16 años de experiencia',
+  tagline: 'Técnico certificado UTN · 16 años de experiencia',
 
   phone: '11 3327-5539',
   phoneIntl: '+5491133275539',
@@ -23,7 +23,7 @@ export const CONTACT = {
     whatsapp: 'https://wa.me/5491133275539',
   },
 
-  // TODO: reemplazar con link publico de Google Drive (foto de WhatsApp del tecnico).
+  // TODO: reemplazar con link publico de Google Drive (foto de WhatsApp del técnico).
   // El componente Avatar la pasa por transformDriveImage() automaticamente.
   avatarDriveUrl: '',
 

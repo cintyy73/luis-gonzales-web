@@ -23,7 +23,7 @@ export const Logo = ({ size = 'md', showText = true }: Props) => {
         >
           <Image
             src="/logo.png"
-            alt="Luis Gonzalez - servicio tecnico"
+            alt="Luis Gonzalez - servicio técnico"
             boxSize="100%"
             objectFit="cover"
             display="block"
@@ -42,7 +42,7 @@ export const Logo = ({ size = 'md', showText = true }: Props) => {
               Luis Gonzalez
             </Text>
             <Text fontSize="xs" color="brand.300" fontWeight="600" letterSpacing="0.08em">
-              SERVICIO TECNICO
+              SERVICIO TÉCNICO
             </Text>
           </Box>
         )}

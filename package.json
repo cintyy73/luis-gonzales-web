@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Sitio web profesional de Luis Gonzalez - Servicio tecnico de aires acondicionados, lavarropas y secarropas",
+  "description": "Sitio web profesional de Luis Gonzalez - Servicio técnico de aires acondicionados, lavarropas y secarropas",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

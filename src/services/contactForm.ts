@@ -1,15 +1,8 @@
 import type { ContactFormValues } from '@/types'
-import { buildWhatsAppUrl } from '@/utils/whatsapp'
+import { CONTACT } from '@/data/contact'
 
-/**
- * Convierte los datos del formulario en un mensaje listo para WhatsApp
- * y abre la conversacion en una nueva pestaña.
- *
- * Hook de integracion futura: aca podes despachar tambien a EmailJS,
- * a un endpoint propio (Firebase / Supabase) o a un CRM.
- */
-export const sendContactToWhatsApp = (values: ContactFormValues): void => {
-  const message = [
+const buildBody = (values: ContactFormValues): string =>
+  [
     `Hola Luis, te contacto desde la web.`,
     ``,
     `Nombre: ${values.name}`,
@@ -21,6 +14,13 @@ export const sendContactToWhatsApp = (values: ContactFormValues): void => {
     values.message,
   ].join('\n')
 
-  const url = buildWhatsAppUrl(message)
-  window.open(url, '_blank', 'noopener,noreferrer')
+/**
+ * Abre el cliente de email predeterminado del usuario con un mensaje
+ * pre-llenado dirigido a CONTACT.email.
+ */
+export const sendContactByEmail = (values: ContactFormValues): void => {
+  const subject = `Consulta web · ${values.service}`
+  const body = buildBody(values)
+  const url = `mailto:${CONTACT.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+  window.location.href = url
 }

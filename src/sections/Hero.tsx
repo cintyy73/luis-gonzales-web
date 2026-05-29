@@ -111,7 +111,7 @@ export const Hero = () => {
               letterSpacing="-0.025em"
               color="white"
             >
-              Servicio Tecnico
+              Servicio Técnico
               <br />
               <Box
                 as="span"
@@ -132,7 +132,7 @@ export const Hero = () => {
               lineHeight="1.7"
             >
               Instalacion, reparacion y mantenimiento de aires acondicionados split, carga de gas, reparacion de lavarropas, microondas y hornos electricos.
-              Tecnico certificado UTN con 16 años de experiencia.
+              Técnico certificado UTN con 16 años de experiencia.
             </MotionText>
 
             <MotionStack variants={fadeInUp} direction={{ base: 'column', sm: 'row' }} gap={3} pt={2}>
@@ -230,7 +230,7 @@ export const Hero = () => {
               p={3}
             >
               <Box position="relative" borderRadius="xl2" overflow="hidden">
-                <Image src={avatar} alt="Luis Gonzalez - Tecnico profesional" w="full" h={{ base: '380px', md: '460px' }} objectFit="cover" />
+                <Image src={avatar} alt="Luis Gonzalez - Técnico profesional" w="full" h={{ base: '380px', md: '460px' }} objectFit="cover" />
                 <Box
                   position="absolute"
                   bottom={0}

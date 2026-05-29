@@ -44,7 +44,7 @@ export const Footer = () => {
           <VStack align="flex-start" gap={4}>
             <Logo size="md" />
             <Text color="fg.muted" fontSize="sm" lineHeight="1.7">
-              Tecnico certificado UTN con 16 años de experiencia en aires acondicionados, lavarropas, microondas y hornos electricos. CABA y GBA, atencion rapida y trabajos garantizados.
+              Técnico certificado UTN con 16 años de experiencia en aires acondicionados, lavarropas, microondas y hornos electricos. CABA y GBA, atencion rapida y trabajos garantizados.
             </Text>
             <HStack gap={2}>
               <IconButton
@@ -186,7 +186,7 @@ export const Footer = () => {
             © {new Date().getFullYear()} {CONTACT.brand}. Todos los derechos reservados.
           </Text>
           <Text fontSize="xs" color="fg.subtle">
-            Servicio tecnico profesional · {CONTACT.serviceArea}
+            Servicio técnico profesional · {CONTACT.serviceArea}
           </Text>
         </Stack>
       </Container>
