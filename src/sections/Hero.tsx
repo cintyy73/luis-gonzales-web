@@ -234,7 +234,7 @@ export const Hero = () => {
                   bottom={0}
                   left={0}
                   right={0}
-                  bgGradient="linear-gradient(to top, rgba(5,14,32,0.95) 0%, transparent 60%)"
+                  bgGradient="linear-gradient(to top, rgba(5,14,32,0.97) 0%, rgba(5,14,32,0.78) 35%, transparent 80%)"
                   p={5}
                 >
                   <Text fontSize="xs" color="brand.300" fontWeight="700" letterSpacing="0.15em" textTransform="uppercase" mb={1}>
@@ -243,7 +243,7 @@ export const Hero = () => {
                   <Text fontFamily="heading" fontSize="2xl" fontWeight="800" color="white" lineHeight="1.1">
                     Luis Gonzalez
                   </Text>
-                  <Text fontSize="sm" color="fg.muted" mt={1}>
+                  <Text fontSize="sm" color="white" opacity={0.92} fontWeight="500" mt={1}>
                     Certificado UTN · 16+ años de experiencia
                   </Text>
                 </Box>
