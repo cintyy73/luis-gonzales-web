@@ -1,17 +1,18 @@
 import type { Brand } from '@/types'
 
-// Si tenes el SVG/PNG real de la marca, dejalo en /public/brands/<id>.svg y
-// el componente lo va a mostrar automaticamente. Mientras tanto se renderiza
-// el nombre como wordmark estilizado.
+// Las marcas con logoUrl apuntan a Simple Icons CDN (SVG monocromatico).
+// Las marcas argentinas/menores no estan en Simple Icons y caen al wordmark
+// estilizado del componente BrandLogo. Para reemplazar por el SVG real, dejar
+// el archivo en /public/brands/<id>.svg y poner logoUrl: '/brands/<id>.svg'.
 export const BRANDS: Brand[] = [
-  { id: 'samsung', name: 'Samsung', category: 'multi', logoUrl: '/brands/samsung.svg' },
-  { id: 'lg', name: 'LG', category: 'multi', logoUrl: '/brands/lg.svg' },
-  { id: 'whirlpool', name: 'Whirlpool', category: 'lavarropas', logoUrl: '/brands/whirlpool.svg' },
-  { id: 'electrolux', name: 'Electrolux', category: 'lavarropas', logoUrl: '/brands/electrolux.svg' },
-  { id: 'drean', name: 'Drean', category: 'lavarropas', logoUrl: '/brands/drean.svg' },
-  { id: 'patriot', name: 'Patriot', category: 'lavarropas', logoUrl: '/brands/patriot.svg' },
-  { id: 'bgh', name: 'BGH', category: 'multi', logoUrl: '/brands/bgh.svg' },
-  { id: 'surrey', name: 'Surrey', category: 'aires', logoUrl: '/brands/surrey.svg' },
-  { id: 'philco', name: 'Philco', category: 'aires', logoUrl: '/brands/philco.svg' },
-  { id: 'carrier', name: 'Carrier', category: 'aires', logoUrl: '/brands/carrier.svg' },
+  { id: 'samsung', name: 'Samsung', category: 'multi', logoUrl: 'https://cdn.simpleicons.org/samsung' },
+  { id: 'lg', name: 'LG', category: 'multi', logoUrl: 'https://cdn.simpleicons.org/lg' },
+  { id: 'whirlpool', name: 'Whirlpool', category: 'lavarropas' },
+  { id: 'electrolux', name: 'Electrolux', category: 'lavarropas' },
+  { id: 'drean', name: 'Drean', category: 'lavarropas' },
+  { id: 'patriot', name: 'Patriot', category: 'lavarropas' },
+  { id: 'bgh', name: 'BGH', category: 'multi' },
+  { id: 'surrey', name: 'Surrey', category: 'aires' },
+  { id: 'philco', name: 'Philco', category: 'aires' },
+  { id: 'carrier', name: 'Carrier', category: 'aires' },
 ]
