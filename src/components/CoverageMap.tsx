@@ -18,8 +18,8 @@ export const CoverageMap = () => {
       >
         <MapContainer
           center={MAP_CENTER}
-          zoom={10}
-          minZoom={9}
+          zoom={9}
+          minZoom={8}
           maxZoom={14}
           scrollWheelZoom={false}
           style={{ height: '100%', width: '100%', background: '#0A1A35' }}
