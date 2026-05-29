@@ -31,7 +31,7 @@ import { GlassCard } from '@/components/GlassCard'
 import { Link } from '@/components/Link'
 import { CONTACT } from '@/data/contact'
 import { SERVICES } from '@/data/services'
-import { sendContactToWhatsApp } from '@/services/contactForm'
+import { sendContactByEmail } from '@/services/contactForm'
 import type { ContactFormValues } from '@/types'
 import { fadeInUp, slideInLeft, slideInRight } from '@/animations/variants'
 
@@ -70,7 +70,7 @@ export const Contact = () => {
 
   const onSubmit = async (values: ContactFormValues) => {
     await new Promise((r) => setTimeout(r, 400))
-    sendContactToWhatsApp(values)
+    sendContactByEmail(values)
     setSent(true)
     reset()
     setTimeout(() => setSent(false), 5000)
@@ -116,6 +116,8 @@ export const Contact = () => {
                   <HStack
                     gap={4}
                     p={5}
+                    w="100%"
+                    minW={0}
                     borderRadius="xl"
                     bg="rgba(255,255,255,0.03)"
                     borderWidth="1px"
@@ -145,8 +147,8 @@ export const Contact = () => {
                       <Text
                         fontWeight="600"
                         color="white"
-                        fontSize={{ base: 'sm', md: 'md' }}
-                        wordBreak="break-word"
+                        fontSize={{ base: 'xs', md: 'md' }}
+                        wordBreak="break-all"
                         overflowWrap="anywhere"
                       >
                         {item.value}
@@ -159,12 +161,13 @@ export const Contact = () => {
                     key={item.label}
                     href={item.href}
                     display="block"
+                    w="100%"
                     _hover={{ textDecoration: 'none' }}
                   >
                     {content}
                   </Link>
                 ) : (
-                  <Box key={item.label}>{content}</Box>
+                  <Box key={item.label} w="100%">{content}</Box>
                 )
               })}
 
@@ -319,7 +322,7 @@ export const Contact = () => {
                   transition="all 0.25s"
                 >
                   <TbSend style={{ marginRight: 8 }} />
-                  Enviar y abrir WhatsApp
+                  Enviar por email
                 </Button>
               </Stack>
 
@@ -346,7 +349,7 @@ export const Contact = () => {
                       <TbCheck size={14} strokeWidth={3} />
                     </Box>
                     <Text fontSize="sm" color="white" fontWeight="600">
-                      Tu consulta esta lista para enviarse por WhatsApp. ¡Gracias!
+                      Abrimos tu cliente de email con la consulta lista para enviar.
                     </Text>
                   </HStack>
                 </MotionBox>
