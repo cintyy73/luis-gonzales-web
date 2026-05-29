@@ -1,14 +1,18 @@
 import { Box, Button, HStack, Heading, Stack, Text } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import { FaWhatsapp } from 'react-icons/fa'
-import { TbPhone } from 'react-icons/tb'
+import { TbPhone, TbMail } from 'react-icons/tb'
 import { Container } from '@/components/Container'
 import { buildWhatsAppUrl, buildTelUrl } from '@/utils/whatsapp'
+import { CONTACT } from '@/data/contact'
 import { fadeInUp } from '@/animations/variants'
 
 const MotionBox = motion.create(Box)
 
 const CTA_WA = 'Hola Luis, quiero coordinar una visita por WhatsApp.'
+const CTA_EMAIL_SUBJECT = 'Consulta desde la web'
+const CTA_EMAIL_BODY = 'Hola Luis, quiero coordinar una visita. Te dejo mi consulta:\n\n'
+const ctaMailto = `mailto:${CONTACT.email}?subject=${encodeURIComponent(CTA_EMAIL_SUBJECT)}&body=${encodeURIComponent(CTA_EMAIL_BODY)}`
 
 export const FinalCta = () => {
   return (
@@ -49,7 +53,7 @@ export const FinalCta = () => {
             </Text>
             <Heading
               as="h2"
-              fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
+              fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}
               fontWeight="800"
               lineHeight="1.1"
               color="white"
@@ -84,6 +88,24 @@ export const FinalCta = () => {
               >
                 <FaWhatsapp style={{ marginRight: 8 }} size={20} />
                 Pedir Presupuesto
+              </Button>
+              <Button
+                as="a"
+                // @ts-expect-error chakra anchor
+                href={ctaMailto}
+                size="lg"
+                px={7}
+                py={7}
+                bg="brand.500"
+                color="white"
+                fontWeight="700"
+                borderRadius="full"
+                boxShadow="0 14px 30px -10px rgba(14,165,255,0.55)"
+                _hover={{ bg: 'brand.400', transform: 'translateY(-2px)' }}
+                transition="all 0.25s"
+              >
+                <TbMail style={{ marginRight: 8 }} size={20} />
+                Enviar email
               </Button>
               <Button
                 as="a"
