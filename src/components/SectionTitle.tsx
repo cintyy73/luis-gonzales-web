@@ -53,7 +53,7 @@ export const SectionTitle = ({
       )}
       <Heading
         as="h2"
-        fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
+        fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}
         fontWeight="800"
         lineHeight="1.1"
         letterSpacing="-0.02em"

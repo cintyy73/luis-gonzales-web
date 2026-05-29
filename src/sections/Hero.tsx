@@ -105,7 +105,7 @@ export const Hero = () => {
             <MotionHeading
               variants={fadeInUp}
               as="h1"
-              fontSize={{ base: '4xl', md: '5xl', lg: '6xl' }}
+              fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
               fontWeight="800"
               lineHeight="1.05"
               letterSpacing="-0.025em"
