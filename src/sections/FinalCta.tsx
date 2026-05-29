@@ -76,6 +76,7 @@ export const FinalCta = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 size="lg"
+                minW={{ base: '200px', md: '220px' }}
                 px={7}
                 py={7}
                 bg="whatsapp.500"
@@ -94,6 +95,7 @@ export const FinalCta = () => {
                 // @ts-expect-error chakra anchor
                 href={ctaMailto}
                 size="lg"
+                minW={{ base: '200px', md: '220px' }}
                 px={7}
                 py={7}
                 bg="brand.500"
@@ -112,6 +114,7 @@ export const FinalCta = () => {
                 // @ts-expect-error chakra anchor
                 href={buildTelUrl()}
                 size="lg"
+                minW={{ base: '200px', md: '220px' }}
                 px={7}
                 py={7}
                 variant="outline"

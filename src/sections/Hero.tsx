@@ -143,6 +143,7 @@ export const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 size="lg"
+                minW={{ base: '200px', md: '220px' }}
                 px={7}
                 py={7}
                 bg="whatsapp.500"
@@ -165,6 +166,7 @@ export const Hero = () => {
                 // @ts-expect-error chakra anchor
                 href={buildTelUrl()}
                 size="lg"
+                minW={{ base: '200px', md: '220px' }}
                 px={7}
                 py={7}
                 variant="outline"
