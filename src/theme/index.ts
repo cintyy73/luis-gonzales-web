@@ -19,9 +19,9 @@ const config = defineConfig({
       color: 'white',
     },
     '*::-webkit-scrollbar': { width: '10px', height: '10px' },
-    '*::-webkit-scrollbar-track': { bg: 'rgba(10,26,53,0.4)' },
+    '*::-webkit-scrollbar-track': { bg: 'rgba(10,11,13,0.5)' },
     '*::-webkit-scrollbar-thumb': {
-      bg: 'linear-gradient(180deg, #0EA5FF 0%, #0A1A35 100%)',
+      bg: 'linear-gradient(180deg, #008BF4 0%, #000000 100%)',
       borderRadius: '8px',
     },
   },
@@ -36,7 +36,7 @@ const config = defineConfig({
     tokens: {
       fonts: {
         body: { value: "'Inter', system-ui, -apple-system, sans-serif" },
-        heading: { value: "'Plus Jakarta Sans', 'Inter', sans-serif" },
+        heading: { value: "'Poppins', 'Inter', sans-serif" },
       },
       fontSizes: {
         '7xl': { value: '4.5rem' },
@@ -49,29 +49,35 @@ const config = defineConfig({
         xl4: { value: '2.25rem' },
       },
       colors: {
+        // Colores de marca (del logo): azul del copo, naranja del sol, negro de fondo
+        palette: {
+          blue: { value: '#008BF4' }, // azul del copo de nieve
+          orange: { value: '#F58E3F' }, // naranja del sol
+          black: { value: '#000000' }, // fondo negro
+        },
         brand: {
-          50: { value: '#E6F4FF' },
-          100: { value: '#B8DFFF' },
-          200: { value: '#8AC9FF' },
-          300: { value: '#5CB2FF' },
-          400: { value: '#2E9BFF' },
-          500: { value: '#0EA5FF' },
-          600: { value: '#0584D6' },
-          700: { value: '#0264A6' },
-          800: { value: '#014375' },
-          900: { value: '#012345' },
+          50: { value: '#E5F3FE' },
+          100: { value: '#BBDFFD' },
+          200: { value: '#8ECAFC' },
+          300: { value: '#5FB4FB' },
+          400: { value: '#2F9FF8' },
+          500: { value: '#008BF4' }, // azul del logo
+          600: { value: '#0070C7' },
+          700: { value: '#00549A' },
+          800: { value: '#00396D' },
+          900: { value: '#001E40' },
         },
         navy: {
-          50: { value: '#E8ECF4' },
-          100: { value: '#C5CEE0' },
-          200: { value: '#9AA8C7' },
-          300: { value: '#6F83AE' },
-          400: { value: '#465F95' },
-          500: { value: '#23427C' },
-          600: { value: '#1A3163' },
-          700: { value: '#13234A' },
-          800: { value: '#0A1A35' },
-          900: { value: '#050E20' },
+          50: { value: '#ECEDEE' },
+          100: { value: '#CFD0D2' },
+          200: { value: '#A4A6AA' },
+          300: { value: '#74767C' },
+          400: { value: '#494B51' },
+          500: { value: '#2B2D33' },
+          600: { value: '#1C1E23' },
+          700: { value: '#131418' },
+          800: { value: '#0A0B0D' },
+          900: { value: '#000000' }, // negro del logo (fondo base)
         },
         sky: {
           50: { value: '#F0F9FF' },
@@ -92,16 +98,16 @@ const config = defineConfig({
           700: { value: '#15803D' },
         },
         accent: {
-          50: { value: '#FFF4E6' },
-          100: { value: '#FFE1BF' },
-          200: { value: '#FFC78A' },
-          300: { value: '#FFAB55' },
-          400: { value: '#FB923C' },
-          500: { value: '#F97316' },
-          600: { value: '#EA580C' },
-          700: { value: '#C2410C' },
-          800: { value: '#9A3412' },
-          900: { value: '#7C2D12' },
+          50: { value: '#FEF1E6' },
+          100: { value: '#FDDCBF' },
+          200: { value: '#FBC494' },
+          300: { value: '#F9AB69' },
+          400: { value: '#F79C52' },
+          500: { value: '#F58E3F' }, // naranja del logo (sol)
+          600: { value: '#E5731F' },
+          700: { value: '#C25A12' },
+          800: { value: '#94440D' },
+          900: { value: '#6B3109' },
         },
       },
       shadows: {
@@ -128,10 +134,10 @@ const config = defineConfig({
       gradients: {
         hero: {
           value:
-            'radial-gradient(at 20% 20%, rgba(14,165,255,0.25) 0px, transparent 50%), radial-gradient(at 80% 30%, rgba(125,211,252,0.15) 0px, transparent 50%), radial-gradient(at 50% 80%, rgba(2,132,199,0.20) 0px, transparent 50%), linear-gradient(180deg, #050E20 0%, #0A1A35 100%)',
+            'radial-gradient(at 18% 20%, rgba(0,139,244,0.22) 0px, transparent 50%), radial-gradient(at 82% 28%, rgba(245,142,63,0.16) 0px, transparent 50%), radial-gradient(at 50% 88%, rgba(0,139,244,0.12) 0px, transparent 55%), linear-gradient(180deg, #000000 0%, #0A0B0D 100%)',
         },
         brand: {
-          value: 'linear-gradient(135deg, #0EA5FF 0%, #0284C7 100%)',
+          value: 'linear-gradient(135deg, #008BF4 0%, #00549A 100%)',
         },
         glass: {
           value:
@@ -141,22 +147,28 @@ const config = defineConfig({
     },
     semanticTokens: {
       colors: {
-        'bg.base': { value: '{colors.navy.900}' },
+        // base/_light/_dark forzados: estos nombres colisionan con tokens por
+        // defecto de Chakra v3, asi el override gana en cualquier color mode
+        'bg.base': { value: { base: '{colors.navy.900}', _light: '{colors.navy.900}', _dark: '{colors.navy.900}' } },
         'bg.surface': { value: '{colors.navy.800}' },
-        'bg.subtle': { value: '{colors.navy.700}' },
-        'bg.muted': { value: 'rgba(255,255,255,0.04)' },
-        'fg.default': { value: '#F5F8FF' },
-        'fg.muted': { value: 'rgba(245,248,255,0.72)' },
-        'fg.subtle': { value: 'rgba(245,248,255,0.52)' },
-        'border.subtle': { value: 'rgba(255,255,255,0.08)' },
+        'bg.subtle': { value: { base: '{colors.navy.700}', _light: '{colors.navy.700}', _dark: '{colors.navy.700}' } },
+        'bg.muted': { value: { base: 'rgba(255,255,255,0.04)', _light: 'rgba(255,255,255,0.04)', _dark: 'rgba(255,255,255,0.04)' } },
+        'fg.default': { value: { base: '#E6EAF0', _light: '#E6EAF0', _dark: '#E6EAF0' } },
+        'fg.muted': { value: { base: '#B0B6C0', _light: '#B0B6C0', _dark: '#B0B6C0' } },
+        'fg.subtle': { value: { base: '#888F9B', _light: '#888F9B', _dark: '#888F9B' } },
+        'border.subtle': { value: { base: 'rgba(255,255,255,0.08)', _light: 'rgba(255,255,255,0.08)', _dark: 'rgba(255,255,255,0.08)' } },
         'border.default': { value: 'rgba(255,255,255,0.12)' },
-        'border.accent': { value: 'rgba(14,165,255,0.4)' },
+        'border.accent': { value: 'rgba(0,139,244,0.4)' },
         'accent.solid': { value: '{colors.brand.500}' },
         'accent.muted': { value: '{colors.brand.700}' },
         'accent.warm': { value: '{colors.accent.500}' },
         'accent.warm.soft': { value: '{colors.accent.300}' },
-        'accent.warm.bg': { value: 'rgba(249,115,22,0.10)' },
-        'border.warm': { value: 'rgba(249,115,22,0.35)' },
+        'accent.warm.bg': { value: 'rgba(245,142,63,0.10)' },
+        'border.warm': { value: 'rgba(245,142,63,0.35)' },
+        // Colores del logo
+        'palette.blue': { value: '{colors.palette.blue}' },
+        'palette.orange': { value: '{colors.palette.orange}' },
+        'palette.black': { value: '{colors.palette.black}' },
       },
     },
   },

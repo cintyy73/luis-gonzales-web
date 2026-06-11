@@ -36,7 +36,7 @@ export const Logo = ({ size = 'md', showText = true }: Props) => {
               fontFamily="heading"
               fontWeight="800"
               fontSize={fontSize}
-              color="white"
+              color="fg.default"
               letterSpacing="-0.02em"
             >
               Luis Gonzalez

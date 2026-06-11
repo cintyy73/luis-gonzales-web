@@ -24,7 +24,7 @@ export const GlassCard = forwardRef<HTMLDivElement, Props>(
               transform: 'translateY(-6px)',
               borderColor: 'border.accent',
               boxShadow: 'cardHover',
-              bg: 'rgba(14,165,255,0.05)',
+              bg: 'rgba(0,139,244,0.05)',
             }
           : undefined
       }

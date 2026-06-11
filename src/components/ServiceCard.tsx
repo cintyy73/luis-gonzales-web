@@ -31,7 +31,7 @@ export const ServiceCard = ({ service }: Props) => {
         top={0}
         right={0}
         boxSize="160px"
-        bg="radial-gradient(circle at top right, rgba(14,165,255,0.18) 0%, transparent 70%)"
+        bg="radial-gradient(circle at top right, rgba(0,139,244,0.18) 0%, transparent 70%)"
         pointerEvents="none"
       />
 
@@ -39,7 +39,7 @@ export const ServiceCard = ({ service }: Props) => {
         <Box
           boxSize={14}
           borderRadius="xl"
-          bgGradient="linear-gradient(135deg, rgba(14,165,255,0.18) 0%, rgba(2,132,199,0.10) 100%)"
+          bgGradient="linear-gradient(135deg, rgba(0,139,244,0.18) 0%, rgba(245,142,63,0.10) 100%)"
           borderWidth="1px"
           borderColor="border.accent"
           display="grid"
@@ -73,7 +73,7 @@ export const ServiceCard = ({ service }: Props) => {
         fontFamily="heading"
         fontSize="xl"
         fontWeight="800"
-        color="white"
+        color="fg.default"
         lineHeight="1.25"
         mb={2}
       >
@@ -118,7 +118,7 @@ export const ServiceCard = ({ service }: Props) => {
           py={3}
           borderRadius="lg"
           bg="whatsapp.500"
-          color="white"
+          color="fg.default"
           fontSize="sm"
           fontWeight="700"
           transition="all 0.25s"
@@ -136,9 +136,9 @@ export const ServiceCard = ({ service }: Props) => {
           borderRadius="lg"
           borderWidth="1px"
           borderColor="border.default"
-          color="white"
+          color="fg.default"
           transition="all 0.25s"
-          _hover={{ bg: 'rgba(14,165,255,0.10)', borderColor: 'border.accent', textDecoration: 'none' }}
+          _hover={{ bg: 'rgba(0,139,244,0.10)', borderColor: 'border.accent', textDecoration: 'none' }}
         >
           <TbArrowUpRight size={18} />
         </Link>

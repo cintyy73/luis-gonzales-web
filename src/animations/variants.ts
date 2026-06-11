@@ -52,11 +52,11 @@ export const floatY: Variants = {
 }
 
 export const pulseGlow: Variants = {
-  initial: { boxShadow: '0 0 0 0 rgba(14,165,255,0.6)' },
+  initial: { boxShadow: '0 0 0 0 rgba(0,139,244,0.6)' },
   animate: {
     boxShadow: [
-      '0 0 0 0 rgba(14,165,255,0.6)',
-      '0 0 0 20px rgba(14,165,255,0)',
+      '0 0 0 0 rgba(0,139,244,0.6)',
+      '0 0 0 20px rgba(0,139,244,0)',
     ],
     transition: { duration: 2, repeat: Infinity, ease: 'easeOut' },
   },

@@ -90,7 +90,7 @@ export const Contact = () => {
         right="-10%"
         boxSize={{ base: '300px', md: '500px' }}
         borderRadius="full"
-        bg="radial-gradient(circle, rgba(14,165,255,0.15) 0%, transparent 70%)"
+        bg="radial-gradient(circle, rgba(0,139,244,0.15) 0%, transparent 70%)"
         filter="blur(60px)"
         pointerEvents="none"
       />
@@ -124,13 +124,13 @@ export const Contact = () => {
                     borderColor="border.subtle"
                     backdropFilter="blur(10px)"
                     transition="all 0.3s"
-                    _hover={{ borderColor: 'border.accent', bg: 'rgba(14,165,255,0.04)' }}
+                    _hover={{ borderColor: 'border.accent', bg: 'rgba(0,139,244,0.04)' }}
                     cursor={item.href ? 'pointer' : 'default'}
                   >
                     <Box
                       boxSize={11}
                       borderRadius="lg"
-                      bgGradient="linear-gradient(135deg, rgba(14,165,255,0.20) 0%, rgba(2,132,199,0.10) 100%)"
+                      bgGradient="linear-gradient(135deg, rgba(0,139,244,0.20) 0%, rgba(245,142,63,0.10) 100%)"
                       borderWidth="1px"
                       borderColor="border.accent"
                       display="grid"
@@ -146,7 +146,7 @@ export const Contact = () => {
                       </Text>
                       <Text
                         fontWeight="600"
-                        color="white"
+                        color="fg.default"
                         fontSize={{ base: 'xs', md: 'md' }}
                         wordBreak="break-all"
                         overflowWrap="anywhere"
@@ -181,7 +181,7 @@ export const Contact = () => {
               >
                 <HStack gap={3} mb={2}>
                   <Box as={FaWhatsapp} color="whatsapp.400" boxSize={5} />
-                  <Text fontWeight="700" color="white">
+                  <Text fontWeight="700" color="fg.default">
                     Respuesta directa por WhatsApp
                   </Text>
                 </HStack>
@@ -213,7 +213,7 @@ export const Contact = () => {
                     placeholder="Juan Perez"
                     bg="rgba(255,255,255,0.04)"
                     borderColor="border.default"
-                    color="white"
+                    color="fg.default"
                     _placeholder={{ color: 'fg.subtle' }}
                     _focus={{ borderColor: 'brand.400', boxShadow: '0 0 0 1px var(--chakra-colors-brand-400)' }}
                     {...register('name')}
@@ -229,7 +229,7 @@ export const Contact = () => {
                     placeholder="11 1234-5678"
                     bg="rgba(255,255,255,0.04)"
                     borderColor="border.default"
-                    color="white"
+                    color="fg.default"
                     _placeholder={{ color: 'fg.subtle' }}
                     _focus={{ borderColor: 'brand.400', boxShadow: '0 0 0 1px var(--chakra-colors-brand-400)' }}
                     {...register('phone')}
@@ -247,7 +247,7 @@ export const Contact = () => {
                     placeholder="Palermo, San Isidro, Moron..."
                     bg="rgba(255,255,255,0.04)"
                     borderColor="border.default"
-                    color="white"
+                    color="fg.default"
                     _placeholder={{ color: 'fg.subtle' }}
                     _focus={{ borderColor: 'brand.400', boxShadow: '0 0 0 1px var(--chakra-colors-brand-400)' }}
                     {...register('zone')}
@@ -263,19 +263,19 @@ export const Contact = () => {
                     <NativeSelect.Field
                       bg="rgba(255,255,255,0.04)"
                       borderColor="border.default"
-                      color="white"
+                      color="fg.default"
                       _focus={{ borderColor: 'brand.400', boxShadow: '0 0 0 1px var(--chakra-colors-brand-400)' }}
                       {...register('service')}
                     >
-                      <option value="" style={{ background: '#0A1A35' }}>
+                      <option value="" style={{ background: '#0D1117' }}>
                         Elegi un servicio...
                       </option>
                       {SERVICES.map((s) => (
-                        <option key={s.id} value={s.shortTitle} style={{ background: '#0A1A35' }}>
+                        <option key={s.id} value={s.shortTitle} style={{ background: '#0D1117' }}>
                           {s.shortTitle}
                         </option>
                       ))}
-                      <option value="Otro" style={{ background: '#0A1A35' }}>
+                      <option value="Otro" style={{ background: '#0D1117' }}>
                         Otro / Consulta general
                       </option>
                     </NativeSelect.Field>
@@ -294,7 +294,7 @@ export const Contact = () => {
                   rows={5}
                   bg="rgba(255,255,255,0.04)"
                   borderColor="border.default"
-                  color="white"
+                  color="fg.default"
                   _placeholder={{ color: 'fg.subtle' }}
                   _focus={{ borderColor: 'brand.400', boxShadow: '0 0 0 1px var(--chakra-colors-brand-400)' }}
                   {...register('message')}
@@ -308,16 +308,16 @@ export const Contact = () => {
                   size="lg"
                   flex={1}
                   bg="brand.500"
-                  color="white"
+                  color="fg.default"
                   fontWeight="700"
                   borderRadius="full"
                   loading={isSubmitting}
                   loadingText="Enviando..."
-                  boxShadow="0 10px 24px -10px rgba(5,14,32,0.55)"
+                  boxShadow="0 10px 24px -10px rgba(13,17,23,0.55)"
                   _hover={{
                     bg: 'brand.400',
                     transform: 'translateY(-2px)',
-                    boxShadow: '0 14px 30px -10px rgba(5,14,32,0.65)',
+                    boxShadow: '0 14px 30px -10px rgba(13,17,23,0.65)',
                   }}
                   transition="all 0.25s"
                 >
@@ -342,13 +342,13 @@ export const Contact = () => {
                       boxSize={6}
                       borderRadius="full"
                       bg="whatsapp.500"
-                      color="white"
+                      color="fg.default"
                       display="grid"
                       placeItems="center"
                     >
                       <TbCheck size={14} strokeWidth={3} />
                     </Box>
-                    <Text fontSize="sm" color="white" fontWeight="600">
+                    <Text fontSize="sm" color="fg.default" fontWeight="600">
                       Abrimos tu cliente de email con la consulta lista para enviar.
                     </Text>
                   </HStack>

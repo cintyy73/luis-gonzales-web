@@ -22,7 +22,7 @@ export const CoverageMap = () => {
           minZoom={8}
           maxZoom={14}
           scrollWheelZoom={false}
-          style={{ height: '100%', width: '100%', background: '#0A1A35' }}
+          style={{ height: '100%', width: '100%', background: '#0D1117' }}
           attributionControl={false}
         >
           <TileLayer

@@ -51,7 +51,7 @@ export const GalleryItem = ({ item, onClick }: Props) => {
         className="overlay"
         position="absolute"
         inset={0}
-        bgGradient="linear-gradient(to top, rgba(5,14,32,0.95) 0%, rgba(5,14,32,0.35) 45%, rgba(5,14,32,0) 75%)"
+        bgGradient="linear-gradient(to top, rgba(13,17,23,0.95) 0%, rgba(13,17,23,0.35) 45%, rgba(13,17,23,0) 75%)"
         opacity={0.85}
         transition="opacity 0.3s ease"
         display="flex"
@@ -60,7 +60,7 @@ export const GalleryItem = ({ item, onClick }: Props) => {
       >
         {item.description && (
           <Text
-            color="white"
+            color="fg.default"
             fontSize="sm"
             fontWeight="600"
             lineHeight="1.4"

@@ -43,7 +43,7 @@ export const WhyUs = () => {
                 <Box
                   boxSize={12}
                   borderRadius="xl"
-                  bgGradient="linear-gradient(135deg, rgba(14,165,255,0.18) 0%, rgba(2,132,199,0.10) 100%)"
+                  bgGradient="linear-gradient(135deg, rgba(0,139,244,0.18) 0%, rgba(245,142,63,0.10) 100%)"
                   borderWidth="1px"
                   borderColor="border.accent"
                   display="grid"
@@ -53,7 +53,7 @@ export const WhyUs = () => {
                 >
                   <Box as={Icon} boxSize={6} />
                 </Box>
-                <Text fontFamily="heading" fontSize="lg" fontWeight="700" color="white" mb={2}>
+                <Text fontFamily="heading" fontSize="lg" fontWeight="700" color="fg.default" mb={2}>
                   {item.title}
                 </Text>
                 <Text fontSize="sm" color="fg.muted" lineHeight="1.6">

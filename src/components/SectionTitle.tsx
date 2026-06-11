@@ -35,7 +35,7 @@ export const SectionTitle = ({
           px={4}
           py={1.5}
           borderRadius="full"
-          bg="rgba(14,165,255,0.10)"
+          bg="rgba(0,139,244,0.10)"
           borderWidth="1px"
           borderColor="border.accent"
           backdropFilter="blur(10px)"
@@ -57,7 +57,7 @@ export const SectionTitle = ({
         fontWeight="800"
         lineHeight="1.1"
         letterSpacing="-0.02em"
-        bgGradient="linear-gradient(135deg, #FFFFFF 0%, #BAE6FD 100%)"
+        bgGradient="linear-gradient(135deg, #E6EAF0 0%, #5FB4FB 100%)"
         bgClip="text"
       >
         {title}

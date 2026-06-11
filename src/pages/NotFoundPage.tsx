@@ -10,12 +10,12 @@ export default function NotFoundPage() {
           fontFamily="heading"
           fontSize={{ base: '6xl', md: '8xl' }}
           fontWeight="800"
-          bgGradient="linear-gradient(135deg, #0EA5FF 0%, #075985 100%)"
+          bgGradient="linear-gradient(135deg, #008BF4 0%, #075985 100%)"
           bgClip="text"
         >
           404
         </Text>
-        <Heading as="h1" color="white" fontSize={{ base: '2xl', md: '3xl' }}>
+        <Heading as="h1" color="fg.default" fontSize={{ base: '2xl', md: '3xl' }}>
           Pagina no encontrada
         </Heading>
         <Text color="fg.muted">
@@ -27,7 +27,7 @@ export default function NotFoundPage() {
           to="/"
           size="lg"
           bg="brand.500"
-          color="white"
+          color="fg.default"
           borderRadius="full"
           _hover={{ bg: 'brand.400' }}
         >

@@ -35,7 +35,7 @@ export const Footer = () => {
         transform="translateX(-50%)"
         w="700px"
         h="2px"
-        bgGradient="linear-gradient(90deg, transparent 0%, #0EA5FF 50%, transparent 100%)"
+        bgGradient="linear-gradient(90deg, transparent 0%, #008BF4 50%, transparent 100%)"
         opacity={0.6}
       />
 
@@ -96,7 +96,7 @@ export const Footer = () => {
           </VStack>
 
           <VStack align="flex-start" gap={3}>
-            <Text fontFamily="heading" fontWeight="700" color="white" fontSize="md" mb={1}>
+            <Text fontFamily="heading" fontWeight="700" color="fg.default" fontSize="md" mb={1}>
               Servicios
             </Text>
             {SERVICES.slice(0, 6).map((s) => (
@@ -114,7 +114,7 @@ export const Footer = () => {
           </VStack>
 
           <VStack align="flex-start" gap={3}>
-            <Text fontFamily="heading" fontWeight="700" color="white" fontSize="md" mb={1}>
+            <Text fontFamily="heading" fontWeight="700" color="fg.default" fontSize="md" mb={1}>
               Links rapidos
             </Text>
             {NAV.map((n) => (
@@ -132,7 +132,7 @@ export const Footer = () => {
           </VStack>
 
           <VStack align="flex-start" gap={3}>
-            <Text fontFamily="heading" fontWeight="700" color="white" fontSize="md" mb={1}>
+            <Text fontFamily="heading" fontWeight="700" color="fg.default" fontSize="md" mb={1}>
               Contacto
             </Text>
             <HStack gap={3} align="flex-start">

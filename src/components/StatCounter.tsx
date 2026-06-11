@@ -31,7 +31,7 @@ export const StatCounter = ({ stat }: Props) => {
       <Box
         boxSize={11}
         borderRadius="lg"
-        bg="rgba(14,165,255,0.10)"
+        bg="rgba(0,139,244,0.10)"
         display="grid"
         placeItems="center"
         color="brand.300"
@@ -42,7 +42,7 @@ export const StatCounter = ({ stat }: Props) => {
         fontFamily="heading"
         fontSize={{ base: '3xl', md: '4xl' }}
         fontWeight="800"
-        color="white"
+        color="fg.default"
         lineHeight="1"
       >
         {value}

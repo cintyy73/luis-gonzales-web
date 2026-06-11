@@ -23,14 +23,14 @@ export const WhatsAppButton = ({
       size={size}
       px={6}
       bg="whatsapp.500"
-      color="white"
+      color="fg.default"
       fontWeight="700"
       borderRadius="full"
-      boxShadow="0 12px 30px -10px rgba(34,197,94,0.6)"
+      boxShadow="0 12px 30px -10px rgba(34,197,94,0.25)"
       _hover={{
         bg: 'whatsapp.600',
         transform: 'translateY(-2px)',
-        boxShadow: '0 16px 36px -10px rgba(34,197,94,0.7)',
+        boxShadow: '0 16px 36px -10px rgba(34,197,94,0.3)',
       }}
       _active={{ transform: 'translateY(0)' }}
       transition="all 0.25s ease"

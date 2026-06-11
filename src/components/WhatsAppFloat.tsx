@@ -39,8 +39,8 @@ export const WhatsAppFloat = () => {
           boxSize={{ base: 14, md: 16 }}
           borderRadius="full"
           bg="whatsapp.500"
-          color="white"
-          boxShadow="0 18px 40px -10px rgba(34,197,94,0.7)"
+          color="fg.default"
+          boxShadow="0 18px 40px -10px rgba(34,197,94,0.3)"
           _hover={{
             bg: 'whatsapp.600',
             transform: 'scale(1.05)',

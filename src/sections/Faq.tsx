@@ -10,7 +10,7 @@ export const Faq = () => {
         <SectionTitle
           eyebrow="Preguntas frecuentes"
           title="Todo lo que necesitas saber"
-          subtitle="Si tu duda no aparece aca, escribinos por WhatsApp y te respondemos al instante."
+          subtitle="Si tu duda no aparece acá, escribinos por WhatsApp y te respondemos al instante."
         />
         <FaqAccordion />
       </Container>

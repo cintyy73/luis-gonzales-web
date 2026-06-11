@@ -22,10 +22,10 @@ export const FaqAccordion = () => {
           <Accordion.ItemTrigger
             px={{ base: 5, md: 6 }}
             py={5}
-            _hover={{ bg: 'rgba(14,165,255,0.04)' }}
+            _hover={{ bg: 'rgba(0,139,244,0.04)' }}
             cursor="pointer"
           >
-            <Span flex="1" textAlign="left" fontWeight="700" color="white" fontSize={{ base: 'sm', md: 'md' }}>
+            <Span flex="1" textAlign="left" fontWeight="700" color="fg.default" fontSize={{ base: 'sm', md: 'md' }}>
               {faq.question}
             </Span>
             <Accordion.ItemIndicator>

@@ -25,9 +25,9 @@ export const BrandLogo = ({ brand }: Props) => {
       transition="all 0.3s ease"
       _hover={{
         borderColor: 'border.accent',
-        bg: 'rgba(14,165,255,0.05)',
+        bg: 'rgba(0,139,244,0.05)',
         transform: 'translateY(-2px)',
-        boxShadow: '0 10px 25px -12px rgba(14,165,255,0.3)',
+        boxShadow: '0 10px 25px -12px rgba(0,139,244,0.3)',
       }}
     >
       {!failed && brand.logoUrl ? (

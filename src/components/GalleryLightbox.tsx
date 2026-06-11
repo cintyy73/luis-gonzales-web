@@ -18,7 +18,7 @@ export const GalleryLightbox = ({ images, index, onClose, onPrev, onNext }: Prop
   return (
     <Dialog.Root open={open} onOpenChange={(e) => !e.open && onClose()} size="cover">
       <Portal>
-        <Dialog.Backdrop bg="rgba(5,14,32,0.92)" backdropFilter="blur(12px)" />
+        <Dialog.Backdrop bg="rgba(13,17,23,0.92)" backdropFilter="blur(12px)" />
         <Dialog.Positioner>
           <Dialog.Content bg="transparent" boxShadow="none" maxW="100vw" h="100vh">
             <Box position="relative" w="full" h="full" display="grid" placeItems="center" p={{ base: 4, md: 10 }}>
@@ -29,7 +29,7 @@ export const GalleryLightbox = ({ images, index, onClose, onPrev, onNext }: Prop
                 top={4}
                 right={4}
                 bg="rgba(255,255,255,0.08)"
-                color="white"
+                color="fg.default"
                 borderRadius="full"
                 _hover={{ bg: 'rgba(255,255,255,0.18)' }}
               >
@@ -43,7 +43,7 @@ export const GalleryLightbox = ({ images, index, onClose, onPrev, onNext }: Prop
                 top="50%"
                 transform="translateY(-50%)"
                 bg="rgba(255,255,255,0.08)"
-                color="white"
+                color="fg.default"
                 borderRadius="full"
                 _hover={{ bg: 'rgba(255,255,255,0.18)' }}
               >
@@ -57,7 +57,7 @@ export const GalleryLightbox = ({ images, index, onClose, onPrev, onNext }: Prop
                 top="50%"
                 transform="translateY(-50%)"
                 bg="rgba(255,255,255,0.08)"
-                color="white"
+                color="fg.default"
                 borderRadius="full"
                 _hover={{ bg: 'rgba(255,255,255,0.18)' }}
               >
@@ -75,7 +75,7 @@ export const GalleryLightbox = ({ images, index, onClose, onPrev, onNext }: Prop
                     boxShadow="premium"
                   />
                   {item.description && (
-                    <Text mt={5} color="white" fontSize={{ base: 'sm', md: 'md' }}>
+                    <Text mt={5} color="fg.default" fontSize={{ base: 'sm', md: 'md' }}>
                       {item.description}
                     </Text>
                   )}

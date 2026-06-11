@@ -46,7 +46,7 @@ export const Zones = () => {
                 <Box
                   boxSize={10}
                   borderRadius="lg"
-                  bg="rgba(14,165,255,0.12)"
+                  bg="rgba(0,139,244,0.12)"
                   borderWidth="1px"
                   borderColor="border.accent"
                   display="grid"
@@ -56,7 +56,7 @@ export const Zones = () => {
                   <TbMapPin size={20} />
                 </Box>
                 <VStack align="flex-start" gap={0}>
-                  <Text fontFamily="heading" fontWeight="800" color="white" fontSize="lg">
+                  <Text fontFamily="heading" fontWeight="800" color="fg.default" fontSize="lg">
                     {zone.name}
                   </Text>
                   <Text fontSize="xs" color="fg.subtle">

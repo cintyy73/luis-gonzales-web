@@ -97,7 +97,7 @@ export const MAP_POINTS: MapPoint[] = [
 ]
 
 export const ZONE_META: Record<MapZone, { label: string; color: string }> = {
-  caba: { label: 'CABA', color: '#0EA5FF' },
+  caba: { label: 'CABA', color: '#008BF4' },
   norte: { label: 'Zona Norte', color: '#22C55E' },
   oeste: { label: 'Zona Oeste', color: '#A855F7' },
   sur: { label: 'Zona Sur', color: '#FB923C' },

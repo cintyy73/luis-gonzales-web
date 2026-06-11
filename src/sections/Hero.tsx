@@ -58,7 +58,7 @@ export const Hero = () => {
         left="-10%"
         boxSize={{ base: '300px', md: '500px' }}
         borderRadius="full"
-        bg="radial-gradient(circle, rgba(14,165,255,0.25) 0%, transparent 70%)"
+        bg="radial-gradient(circle, rgba(0,139,244,0.25) 0%, transparent 70%)"
         filter="blur(40px)"
         animate={{ x: [0, 30, 0], y: [0, -20, 0] }}
         transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
@@ -69,7 +69,7 @@ export const Hero = () => {
         right="-10%"
         boxSize={{ base: '300px', md: '500px' }}
         borderRadius="full"
-        bg="radial-gradient(circle, rgba(125,211,252,0.20) 0%, transparent 70%)"
+        bg="radial-gradient(circle, rgba(245,142,63,0.20) 0%, transparent 70%)"
         filter="blur(40px)"
         animate={{ x: [0, -25, 0], y: [0, 20, 0] }}
         transition={{ duration: 14, repeat: Infinity, ease: 'easeInOut' }}
@@ -95,7 +95,7 @@ export const Hero = () => {
                 borderColor="border.warm"
                 backdropFilter="blur(10px)"
               >
-                <Box boxSize={2} borderRadius="full" bg="whatsapp.400" boxShadow="0 0 10px rgba(52,211,153,0.7)" />
+                <Box boxSize={2} borderRadius="full" bg="whatsapp.400" boxShadow="0 0 8px rgba(52,211,153,0.45)" />
                 <Text fontSize="xs" fontWeight="700" letterSpacing="0.12em" textTransform="uppercase" color="accent.warm.soft">
                   Disponible hoy · CABA y GBA
                 </Text>
@@ -109,13 +109,13 @@ export const Hero = () => {
               fontWeight="800"
               lineHeight="1.05"
               letterSpacing="-0.025em"
-              color="white"
+              color="fg.default"
             >
               Servicio Técnico
               <br />
               <Box
                 as="span"
-                bgGradient="linear-gradient(135deg, #0EA5FF 0%, #7DD3FC 50%, #FFFFFF 100%)"
+                bgGradient="linear-gradient(135deg, #008BF4 0%, #5FB4FB 50%, #E6EAF0 100%)"
                 bgClip="text"
               >
                 Profesional de Aires
@@ -147,14 +147,14 @@ export const Hero = () => {
                 px={7}
                 py={7}
                 bg="whatsapp.500"
-                color="white"
+                color="fg.default"
                 fontWeight="700"
                 borderRadius="full"
-                boxShadow="0 14px 35px -10px rgba(34,197,94,0.6)"
+                boxShadow="0 14px 35px -10px rgba(34,197,94,0.25)"
                 _hover={{
                   bg: 'whatsapp.600',
                   transform: 'translateY(-2px)',
-                  boxShadow: '0 20px 40px -10px rgba(34,197,94,0.7)',
+                  boxShadow: '0 20px 40px -10px rgba(34,197,94,0.3)',
                 }}
                 transition="all 0.25s ease"
               >
@@ -170,7 +170,7 @@ export const Hero = () => {
                 px={7}
                 py={7}
                 variant="outline"
-                color="white"
+                color="fg.default"
                 fontWeight="700"
                 borderRadius="full"
                 borderWidth="1px"
@@ -178,7 +178,7 @@ export const Hero = () => {
                 bg="rgba(255,255,255,0.04)"
                 backdropFilter="blur(10px)"
                 _hover={{
-                  bg: 'rgba(14,165,255,0.10)',
+                  bg: 'rgba(0,139,244,0.10)',
                   borderColor: 'border.accent',
                   transform: 'translateY(-2px)',
                 }}
@@ -209,7 +209,7 @@ export const Hero = () => {
             <Box
               position="absolute"
               inset="-20%"
-              bg="radial-gradient(circle, rgba(14,165,255,0.18) 0%, transparent 60%)"
+              bg="radial-gradient(circle, rgba(0,139,244,0.18) 0%, transparent 60%)"
               borderRadius="full"
               filter="blur(40px)"
               zIndex={0}
@@ -236,16 +236,16 @@ export const Hero = () => {
                   bottom={0}
                   left={0}
                   right={0}
-                  bgGradient="linear-gradient(to top, rgba(5,14,32,0.97) 0%, rgba(5,14,32,0.78) 35%, transparent 80%)"
+                  bgGradient="linear-gradient(to top, rgba(13,17,23,0.97) 0%, rgba(13,17,23,0.78) 35%, transparent 80%)"
                   p={5}
                 >
                   <Text fontSize="xs" color="brand.300" fontWeight="700" letterSpacing="0.15em" textTransform="uppercase" mb={1}>
                     A cargo del servicio
                   </Text>
-                  <Text fontFamily="heading" fontSize="2xl" fontWeight="800" color="white" lineHeight="1.1">
+                  <Text fontFamily="heading" fontSize="2xl" fontWeight="800" color="fg.default" lineHeight="1.1">
                     Luis Gonzalez
                   </Text>
-                  <Text fontSize="sm" color="white" opacity={0.92} fontWeight="500" mt={1}>
+                  <Text fontSize="sm" color="fg.default" opacity={0.92} fontWeight="500" mt={1}>
                     Certificado UTN · 16+ años de experiencia
                   </Text>
                 </Box>
@@ -259,10 +259,10 @@ export const Hero = () => {
                 py={2.5}
                 borderRadius="full"
                 bg="whatsapp.500"
-                color="white"
+                color="fg.default"
                 fontWeight="700"
                 fontSize="sm"
-                boxShadow="0 12px 30px -8px rgba(34,197,94,0.6)"
+                boxShadow="0 12px 30px -8px rgba(34,197,94,0.25)"
                 animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
               >
@@ -279,7 +279,7 @@ export const Hero = () => {
                 px={4}
                 py={3}
                 borderRadius="xl"
-                bg="rgba(10,26,53,0.85)"
+                bg="rgba(13,17,23,0.85)"
                 borderWidth="1px"
                 borderColor="border.accent"
                 backdropFilter="blur(14px)"
@@ -288,14 +288,14 @@ export const Hero = () => {
                 transition={{ duration: 3.6, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
               >
                 <HStack gap={3}>
-                  <Box boxSize={9} borderRadius="lg" bg="rgba(14,165,255,0.15)" display="grid" placeItems="center">
-                    <TbArrowRight size={18} color="#7DD3FC" />
+                  <Box boxSize={9} borderRadius="lg" bg="rgba(0,139,244,0.15)" display="grid" placeItems="center">
+                    <TbArrowRight size={18} color="#5FB4FB" />
                   </Box>
                   <Box>
                     <Text fontSize="2xs" color="fg.subtle" fontWeight="600" letterSpacing="0.1em" textTransform="uppercase">
                       Calificacion
                     </Text>
-                    <Text fontFamily="heading" fontSize="lg" fontWeight="800" color="white" lineHeight="1">
+                    <Text fontFamily="heading" fontSize="lg" fontWeight="800" color="fg.default" lineHeight="1">
                       4.9 / 5 ⭐
                     </Text>
                   </Box>

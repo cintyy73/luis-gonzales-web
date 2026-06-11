@@ -38,7 +38,7 @@ export const Navbar = () => {
       right={0}
       zIndex={100}
       transition="all 0.3s ease"
-      bg={scrolled ? 'rgba(5,14,32,0.78)' : 'transparent'}
+      bg={scrolled ? 'rgba(13,17,23,0.78)' : 'transparent'}
       backdropFilter={scrolled ? 'blur(14px) saturate(160%)' : 'none'}
       borderBottomWidth={scrolled ? '1px' : '0'}
       borderColor="border.subtle"
@@ -72,7 +72,7 @@ export const Navbar = () => {
             <IconButton
               aria-label="Abrir menu"
               variant="ghost"
-              color="white"
+              color="fg.default"
               display={{ base: 'inline-flex', lg: 'none' }}
               onClick={() => setOpen(true)}
               _hover={{ bg: 'rgba(255,255,255,0.08)' }}
@@ -90,7 +90,7 @@ export const Navbar = () => {
         size="xs"
       >
         <Portal>
-          <Drawer.Backdrop bg="rgba(5,14,32,0.7)" backdropFilter="blur(8px)" />
+          <Drawer.Backdrop bg="rgba(13,17,23,0.7)" backdropFilter="blur(8px)" />
           <Drawer.Positioner>
             <Drawer.Content
               bg="navy.900"
@@ -103,7 +103,7 @@ export const Navbar = () => {
                   <IconButton
                     aria-label="Cerrar menu"
                     variant="ghost"
-                    color="white"
+                    color="fg.default"
                     onClick={() => setOpen(false)}
                   >
                     <TbX size={22} />
@@ -124,7 +124,7 @@ export const Navbar = () => {
                       fontSize="md"
                       fontWeight="600"
                       color="fg.default"
-                      _hover={{ bg: 'rgba(14,165,255,0.08)', color: 'brand.300', textDecoration: 'none' }}
+                      _hover={{ bg: 'rgba(0,139,244,0.08)', color: 'brand.300', textDecoration: 'none' }}
                       transition="all 0.2s"
                     >
                       {link.label}

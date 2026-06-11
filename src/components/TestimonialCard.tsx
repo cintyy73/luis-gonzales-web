@@ -28,7 +28,7 @@ export const TestimonialCard = ({ testimonial }: Props) => {
       </Text>
 
       <VStack align="stretch" gap={1} pt={4} borderTopWidth="1px" borderColor="border.subtle">
-        <Text fontFamily="heading" fontWeight="700" color="white" fontSize="md">
+        <Text fontFamily="heading" fontWeight="700" color="fg.default" fontSize="md">
           {testimonial.name}
         </Text>
         <HStack gap={1.5}>
