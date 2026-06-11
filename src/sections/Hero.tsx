@@ -16,8 +16,6 @@ import { Container } from '@/components/Container'
 import { TrustBadge } from '@/components/TrustBadge'
 import { fadeIn, fadeInUp, scaleIn, staggerContainer } from '@/animations/variants'
 import { buildWhatsAppUrl, buildTelUrl } from '@/utils/whatsapp'
-import { transformDriveImage } from '@/utils/transformDriveImage'
-import { CONTACT } from '@/data/contact'
 import { STATS } from '@/data/stats'
 import { StatCounter } from '@/components/StatCounter'
 
@@ -26,13 +24,9 @@ const MotionStack = motion.create(Stack)
 const MotionHeading = motion.create(Heading)
 const MotionText = motion.create(Text)
 
-const HERO_WA = 'Hola Luis, vi tu pagina y quiero pedir un presupuesto.'
+const HERO_WA = 'Hola Luis, vi tu página y quiero pedir un presupuesto.'
 
 export const Hero = () => {
-  const avatar = CONTACT.avatarDriveUrl
-    ? transformDriveImage(CONTACT.avatarDriveUrl)
-    : CONTACT.avatarFallback
-
   return (
     <Box
       as="section"
@@ -131,7 +125,7 @@ export const Hero = () => {
               maxW="xl"
               lineHeight="1.7"
             >
-              Instalacion, reparacion y mantenimiento de aires acondicionados split, carga de gas, reparacion de lavarropas, microondas y hornos electricos.
+              Instalación, reparación y mantenimiento de aires acondicionados split, carga de gas, reparación de lavarropas, microondas y hornos eléctricos.
               Técnico certificado UTN con 16 años de experiencia.
             </MotionText>
 
@@ -191,8 +185,8 @@ export const Hero = () => {
 
             <MotionBox variants={fadeIn} pt={4}>
               <HStack gap={2.5} flexWrap="wrap">
-                <TrustBadge label="Atencion rapida" />
-                <TrustBadge label="Garantia escrita" />
+                <TrustBadge label="Atención rápida" />
+                <TrustBadge label="Garantía escrita" />
                 <TrustBadge label="Certificado UTN" />
                 <TrustBadge label="Domicilio CABA y GBA" />
               </HStack>
@@ -221,7 +215,6 @@ export const Hero = () => {
               maxW={{ base: '380px', md: '460px' }}
               mx="auto"
               borderRadius="xl3"
-              overflow="hidden"
               borderWidth="1px"
               borderColor="border.accent"
               boxShadow="premium"
@@ -230,7 +223,7 @@ export const Hero = () => {
               p={3}
             >
               <Box position="relative" borderRadius="xl2" overflow="hidden">
-                <Image src={avatar} alt="Luis Gonzalez - Técnico profesional" w="full" h={{ base: '380px', md: '460px' }} objectFit="cover" />
+                <Image src="/images/instalacion_01.jpeg" alt="Instalación de aire acondicionado split por Luis Gonzalez" w="full" h={{ base: '380px', md: '460px' }} objectFit="cover" />
                 <Box
                   position="absolute"
                   bottom={0}
@@ -268,7 +261,7 @@ export const Hero = () => {
               >
                 <HStack gap={1.5}>
                   <FaWhatsapp />
-                  <Text>Responde rapido</Text>
+                  <Text>Responde rápido</Text>
                 </HStack>
               </MotionBox>
 
@@ -293,7 +286,7 @@ export const Hero = () => {
                   </Box>
                   <Box>
                     <Text fontSize="2xs" color="fg.subtle" fontWeight="600" letterSpacing="0.1em" textTransform="uppercase">
-                      Calificacion
+                      Calificación
                     </Text>
                     <Text fontFamily="heading" fontSize="lg" fontWeight="800" color="fg.default" lineHeight="1">
                       4.9 / 5 ⭐
