@@ -6,7 +6,7 @@ import { buildWhatsAppUrl } from '@/utils/whatsapp'
 const MotionBox = motion.create(Box)
 
 const DEFAULT_MESSAGE =
-  'Hola Luis, vi tu pagina y queria consultarte por un servicio.'
+  'Hola Luis, vi tu página y quería consultarte por un servicio.'
 
 export const WhatsAppFloat = () => {
   return (

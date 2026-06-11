@@ -1,10 +1,10 @@
 # Luis Gonzalez — Servicio Técnico
 
-Sitio web profesional para captacion de clientes de servicio técnico:
+Sitio web profesional para captación de clientes de servicio técnico:
 
-- Instalacion, reparacion y mantenimiento de aires acondicionados
+- Instalación, reparación y mantenimiento de aires acondicionados
 - Carga de gas refrigerante
-- Reparacion de lavarropas y secarropas
+- Reparación de lavarropas, microondas y hornos eléctricos
 
 ## Stack
 
@@ -20,7 +20,7 @@ Sitio web profesional para captacion de clientes de servicio técnico:
 ```bash
 yarn install
 yarn dev      # desarrollo local
-yarn build    # build de produccion
+yarn build    # build de producción
 yarn preview  # preview del build
 yarn lint     # type-check con tsc
 ```
@@ -33,11 +33,11 @@ src/
  ├── components   # UI reutilizable
  ├── data         # contenido tipado (servicios, FAQ, etc.)
  ├── hooks        # hooks reutilizables
- ├── layouts      # layouts de pagina
- ├── pages        # paginas
+ ├── layouts      # layouts de página
+ ├── pages        # páginas
  ├── routes       # router config
  ├── sections     # secciones de la landing
- ├── services     # integraciones (envio de form, etc.)
+ ├── services     # integraciones (envío de form, etc.)
  ├── theme        # tema Chakra v3
  ├── types        # tipos compartidos
  └── utils        # helpers (drive, whatsapp)

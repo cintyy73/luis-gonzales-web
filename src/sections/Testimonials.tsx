@@ -23,7 +23,7 @@ export const Testimonials = () => {
         <SectionTitle
           eyebrow="Lo que dicen los clientes"
           title="Testimonios reales en CABA y GBA"
-          subtitle="Calificacion promedio 4.9/5 sobre cientos de servicios realizados."
+          subtitle="Calificación promedio 4.9/5 sobre cientos de servicios realizados."
         />
 
         <MotionGrid

@@ -18,7 +18,7 @@ export const MAP_POINTS: MapPoint[] = [
   { id: 'almagro', name: 'Almagro', zone: 'caba', lat: -34.6097, lng: -58.4203 },
   { id: 'villa-crespo', name: 'Villa Crespo', zone: 'caba', lat: -34.5985, lng: -58.4395 },
   { id: 'flores', name: 'Flores', zone: 'caba', lat: -34.6276, lng: -58.4642 },
-  { id: 'nunez', name: 'Nuñez', zone: 'caba', lat: -34.5454, lng: -58.4625 },
+  { id: 'nunez', name: 'Núñez', zone: 'caba', lat: -34.5454, lng: -58.4625 },
   { id: 'saavedra', name: 'Saavedra', zone: 'caba', lat: -34.5566, lng: -58.4862 },
   { id: 'san-telmo', name: 'San Telmo', zone: 'caba', lat: -34.6213, lng: -58.3735 },
   { id: 'puerto-madero', name: 'Puerto Madero', zone: 'caba', lat: -34.6118, lng: -58.3637 },
@@ -27,12 +27,12 @@ export const MAP_POINTS: MapPoint[] = [
   { id: 'villa-devoto', name: 'Villa Devoto', zone: 'caba', lat: -34.5970, lng: -58.5135 },
 
   // Zona Norte (15)
-  { id: 'vicente-lopez', name: 'Vicente Lopez', zone: 'norte', lat: -34.5269, lng: -58.4707 },
+  { id: 'vicente-lopez', name: 'Vicente López', zone: 'norte', lat: -34.5269, lng: -58.4707 },
   { id: 'san-isidro', name: 'San Isidro', zone: 'norte', lat: -34.4708, lng: -58.5121 },
   { id: 'san-martin', name: 'San Martin', zone: 'norte', lat: -34.5723, lng: -58.5345 },
   { id: 'olivos', name: 'Olivos', zone: 'norte', lat: -34.5106, lng: -58.4892 },
   { id: 'florida', name: 'Florida', zone: 'norte', lat: -34.5170, lng: -58.4892 },
-  { id: 'martinez', name: 'Martinez', zone: 'norte', lat: -34.4901, lng: -58.5024 },
+  { id: 'martinez', name: 'Martínez', zone: 'norte', lat: -34.4901, lng: -58.5024 },
   { id: 'beccar', name: 'Beccar', zone: 'norte', lat: -34.4604, lng: -58.5239 },
   { id: 'acassuso', name: 'Acassuso', zone: 'norte', lat: -34.4778, lng: -58.5158 },
   { id: 'boulogne', name: 'Boulogne', zone: 'norte', lat: -34.4881, lng: -58.5614 },
@@ -73,8 +73,8 @@ export const MAP_POINTS: MapPoint[] = [
   { id: 'matheu', name: 'Matheu', zone: 'norte', lat: -34.3895, lng: -58.7621 },
 
   // Zona Oeste
-  { id: 'moron', name: 'Moron', zone: 'oeste', lat: -34.6532, lng: -58.6196 },
-  { id: 'ramos-mejia', name: 'Ramos Mejia', zone: 'oeste', lat: -34.6435, lng: -58.5640 },
+  { id: 'moron', name: 'Morón', zone: 'oeste', lat: -34.6532, lng: -58.6196 },
+  { id: 'ramos-mejia', name: 'Ramos Mejía', zone: 'oeste', lat: -34.6435, lng: -58.5640 },
   { id: 'san-justo', name: 'San Justo', zone: 'oeste', lat: -34.6748, lng: -58.5616 },
   { id: 'castelar', name: 'Castelar', zone: 'oeste', lat: -34.6471, lng: -58.6433 },
   { id: 'lujan', name: 'Lujan', zone: 'oeste', lat: -34.5703, lng: -59.1054 },
@@ -90,7 +90,7 @@ export const MAP_POINTS: MapPoint[] = [
 
   // Zona Sur
   { id: 'avellaneda', name: 'Avellaneda', zone: 'sur', lat: -34.6610, lng: -58.3654 },
-  { id: 'lanus', name: 'Lanus', zone: 'sur', lat: -34.7075, lng: -58.3942 },
+  { id: 'lanus', name: 'Lanús', zone: 'sur', lat: -34.7075, lng: -58.3942 },
   { id: 'quilmes', name: 'Quilmes', zone: 'sur', lat: -34.7218, lng: -58.2619 },
   { id: 'ezpeleta', name: 'Ezpeleta', zone: 'sur', lat: -34.7488, lng: -58.2407 },
   { id: 'lomas-de-zamora', name: 'Lomas de Zamora', zone: 'sur', lat: -34.7622, lng: -58.4006 },

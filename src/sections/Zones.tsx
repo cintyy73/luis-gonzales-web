@@ -17,7 +17,7 @@ export const Zones = () => {
     <Box as="section" id="zonas" py={{ base: 16, md: 24 }}>
       <Container>
         <SectionTitle
-          eyebrow="Zonas de atencion"
+          eyebrow="Zonas de atención"
           title="Cobertura en CABA y todo el Gran Buenos Aires"
           subtitle="Atendemos personalmente en los siguientes barrios y localidades. ¿No ves tu zona? Consultanos por WhatsApp."
         />

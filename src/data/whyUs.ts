@@ -11,14 +11,14 @@ import type { WhyUsItem } from '@/types'
 export const WHY_US: WhyUsItem[] = [
   {
     id: 'rapida',
-    title: 'Atencion Rapida',
-    description: 'Respondemos por WhatsApp en minutos y coordinamos visita en el dia o el siguiente habil.',
+    title: 'Atención Rápida',
+    description: 'Respondemos por WhatsApp en minutos y coordinamos visita en el día o el siguiente hábil.',
     icon: TbBolt,
   },
   {
     id: 'garantia',
     title: 'Trabajos Garantizados',
-    description: 'Todos nuestros trabajos incluyen garantia escrita por mano de obra y repuestos.',
+    description: 'Todos nuestros trabajos incluyen garantía escrita por mano de obra y repuestos.',
     icon: TbShieldCheck,
   },
   {
@@ -36,7 +36,7 @@ export const WHY_US: WhyUsItem[] = [
   {
     id: 'herramientas',
     title: 'Herramientas Profesionales',
-    description: 'Bomba de vacio, detector de fugas, manometro y herramientas certificadas.',
+    description: 'Bomba de vacío, detector de fugas, manómetro y herramientas certificadas.',
     icon: TbTools,
   },
   {

@@ -16,10 +16,10 @@ export default function NotFoundPage() {
           404
         </Text>
         <Heading as="h1" color="fg.default" fontSize={{ base: '2xl', md: '3xl' }}>
-          Pagina no encontrada
+          Página no encontrada
         </Heading>
         <Text color="fg.muted">
-          La pagina que buscas no existe o fue movida. Volve al inicio para encontrar lo que necesitas.
+          La página que buscás no existe o fue movida. Volvé al inicio para encontrar lo que necesitás.
         </Text>
         <Button
           as={RouterLink}

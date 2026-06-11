@@ -65,7 +65,7 @@ export const FinalCta = () => {
               </Box>
             </Heading>
             <Text fontSize={{ base: 'md', md: 'lg' }} color="fg.muted" maxW="2xl">
-              Coordina visita por WhatsApp y resolvemos hoy o el dia siguiente. Trabajos con garantia escrita.
+              Coordina visita por WhatsApp y resolvemos hoy o el día siguiente. Trabajos con garantía escrita.
             </Text>
 
             <HStack gap={3} flexWrap="wrap" justify="center" mt={2}>

@@ -6,7 +6,7 @@ const buildBody = (values: ContactFormValues): string =>
     `Hola Luis, te contacto desde la web.`,
     ``,
     `Nombre: ${values.name}`,
-    `Telefono: ${values.phone}`,
+    `Teléfono: ${values.phone}`,
     `Zona: ${values.zone}`,
     `Servicio: ${values.service}`,
     ``,

@@ -15,7 +15,7 @@ export const Services = () => {
         <SectionTitle
           eyebrow="Nuestros Servicios"
           title="Soluciones completas para tu hogar y comercio"
-          subtitle="Atendemos todo el ciclo en aires acondicionados: instalacion, reparacion, mantenimiento y carga de gas. Tambien reparamos lavarropas, microondas y hornos electricos de todas las marcas."
+          subtitle="Atendemos todo el ciclo en aires acondicionados: instalación, reparación, mantenimiento y carga de gas. También reparamos lavarropas, microondas y hornos eléctricos de todas las marcas."
         />
 
         <MotionSimpleGrid

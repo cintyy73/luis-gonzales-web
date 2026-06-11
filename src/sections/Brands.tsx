@@ -16,7 +16,7 @@ export const Brands = () => {
         <SectionTitle
           eyebrow="Marcas"
           title="Trabajamos con todas las marcas"
-          subtitle="Reparamos e instalamos equipos de las principales marcas del mercado, con repuestos originales y garantia escrita."
+          subtitle="Reparamos e instalamos equipos de las principales marcas del mercado, con repuestos originales y garantía escrita."
         />
 
         <MotionGrid

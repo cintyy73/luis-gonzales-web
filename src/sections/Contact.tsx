@@ -42,15 +42,15 @@ const schema = z.object({
   name: z.string().min(2, 'Ingresa tu nombre completo').max(80),
   phone: z
     .string()
-    .min(8, 'Ingresa un telefono valido')
+    .min(8, 'Ingresa un teléfono válido')
     .regex(/^[\d\s+()-]+$/, 'Solo numeros y espacios'),
   zone: z.string().min(2, 'Indica tu barrio o zona'),
   service: z.string().min(1, 'Elegi un servicio'),
-  message: z.string().min(5, 'Contanos un poco mas').max(500),
+  message: z.string().min(5, 'Contanos un poco más').max(500),
 })
 
 const QUICK_INFO = [
-  { icon: TbPhone, label: 'Telefono', value: CONTACT.whatsappDisplay, href: `tel:${CONTACT.phoneIntl}` },
+  { icon: TbPhone, label: 'Teléfono', value: CONTACT.whatsappDisplay, href: `tel:${CONTACT.phoneIntl}` },
   { icon: TbMail, label: 'Email', value: CONTACT.email, href: `mailto:${CONTACT.email}` },
   { icon: TbMapPin, label: 'Cobertura', value: CONTACT.serviceArea },
   { icon: TbClock, label: 'Horarios', value: CONTACT.hours },
@@ -98,7 +98,7 @@ export const Contact = () => {
         <SectionTitle
           eyebrow="Contacto"
           title="Coordina tu visita en minutos"
-          subtitle="Respondemos por WhatsApp en minutos. Tambien podes completar el formulario y nos comunicamos a la brevedad."
+          subtitle="Respondemos por WhatsApp en minutos. También podés completar el formulario y nos comunicamos a la brevedad."
         />
 
         <SimpleGrid columns={{ base: 1, lg: 5 }} gap={{ base: 6, lg: 8 }} alignItems="stretch">
@@ -186,7 +186,7 @@ export const Contact = () => {
                   </Text>
                 </HStack>
                 <Text fontSize="sm" color="fg.muted">
-                  Es la forma mas rapida de coordinar visita. Te respondemos en minutos en horario laboral.
+                  Es la forma más rápida de coordinar visita. Te respondemos en minutos en horario laboral.
                 </Text>
               </Box>
             </VStack>
@@ -223,7 +223,7 @@ export const Contact = () => {
 
                 <Field.Root invalid={!!errors.phone}>
                   <Field.Label color="fg.muted" fontSize="xs" fontWeight="600" letterSpacing="0.08em" textTransform="uppercase">
-                    Telefono / WhatsApp
+                    Teléfono / WhatsApp
                   </Field.Label>
                   <Input
                     placeholder="11 1234-5678"
@@ -244,7 +244,7 @@ export const Contact = () => {
                     Zona / Barrio
                   </Field.Label>
                   <Input
-                    placeholder="Palermo, San Isidro, Moron..."
+                    placeholder="Palermo, San Isidro, Morón..."
                     bg="rgba(255,255,255,0.04)"
                     borderColor="border.default"
                     color="fg.default"
