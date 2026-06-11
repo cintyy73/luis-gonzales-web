@@ -1,13 +1,10 @@
-import { Box, SimpleGrid } from '@chakra-ui/react'
+import { Box, Image } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import { Container } from '@/components/Container'
 import { SectionTitle } from '@/components/SectionTitle'
-import { BrandLogo } from '@/components/BrandLogo'
-import { BRANDS } from '@/data/brands'
-import { fadeInUp, staggerContainer } from '@/animations/variants'
+import { fadeInUp } from '@/animations/variants'
 
 const MotionBox = motion.create(Box)
-const MotionGrid = motion.create(SimpleGrid)
 
 export const Brands = () => {
   return (
@@ -19,20 +16,24 @@ export const Brands = () => {
           subtitle="Reparamos e instalamos equipos de las principales marcas del mercado, con repuestos originales y garantía escrita."
         />
 
-        <MotionGrid
-          columns={{ base: 2, sm: 3, md: 4, lg: 5 }}
-          gap={{ base: 3, md: 4 }}
-          variants={staggerContainer}
+        <MotionBox
+          variants={fadeInUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.15 }}
+          viewport={{ once: true, amount: 0.2 }}
+          mt={{ base: 8, md: 10 }}
         >
-          {BRANDS.map((b) => (
-            <MotionBox key={b.id} variants={fadeInUp}>
-              <BrandLogo brand={b} />
-            </MotionBox>
-          ))}
-        </MotionGrid>
+          <Image
+            src="/images/logos.png"
+            alt="Marcas que reparamos e instalamos: Samsung, LG, Whirlpool, Electrolux, Drean, Patriot, BGH, Surrey, Philco y Carrier"
+            w="full"
+            maxW="920px"
+            mx="auto"
+            display="block"
+            borderRadius="xl2"
+            loading="lazy"
+          />
+        </MotionBox>
       </Container>
     </Box>
   )
