@@ -8,7 +8,8 @@ export const CONTACT = {
   whatsappRaw: '5491133275539',
   whatsappDisplay: '+54 9 11 3327-5539',
 
-  email: 'serviciotecnico.luisgonzalez@gmail.com',
+  email: 'serviciotecnico@luisgonzalez.com.ar',
+  emailAlt: 'serviciotecnicoluisgonzalez@gmail.com',
 
   city: 'Ciudad Autónoma de Buenos Aires',
   country: 'Argentina',
