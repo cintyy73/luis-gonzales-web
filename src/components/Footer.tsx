@@ -182,12 +182,29 @@ export const Footer = () => {
           borderColor="border.subtle"
           gap={3}
         >
-          <Text fontSize="xs" color="fg.subtle">
-            © {new Date().getFullYear()} {CONTACT.brand}. Todos los derechos reservados.
-          </Text>
-          <Text fontSize="xs" color="fg.subtle">
-            Servicio técnico profesional · {CONTACT.serviceArea}
-          </Text>
+          <VStack align="flex-start" gap={0.5}>
+            <Text fontSize="xs" color="fg.subtle">
+              Sitio desarrollado por Cintia Páez
+            </Text>
+            <Text fontSize="xs" color="fg.subtle">
+              Contacto:{' '}
+              <Link
+                href="mailto:paezcintia.dev@gmail.com"
+                color="brand.300"
+                _hover={{ color: 'brand.200', textDecoration: 'underline' }}
+              >
+                paezcintia.dev@gmail.com
+              </Link>
+            </Text>
+          </VStack>
+          <VStack align={{ base: 'flex-start', md: 'flex-end' }} gap={0.5}>
+            <Text fontSize="xs" color="fg.subtle">
+              Servicio técnico profesional · {CONTACT.serviceArea}
+            </Text>
+            <Text fontSize="xs" color="fg.subtle">
+              © {new Date().getFullYear()} {CONTACT.brand}. Todos los derechos reservados.
+            </Text>
+          </VStack>
         </Stack>
       </Container>
     </Box>
