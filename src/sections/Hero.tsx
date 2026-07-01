@@ -244,30 +244,11 @@ export const Hero = () => {
                 </Box>
               </Box>
 
-              <MotionBox
-                position="absolute"
-                top={6}
-                right={-3}
-                px={4}
-                py={2.5}
-                borderRadius="full"
-                bg="whatsapp.500"
-                color="fg.default"
-                fontWeight="700"
-                fontSize="sm"
-                boxShadow="0 12px 30px -8px rgba(34,197,94,0.25)"
-                animate={{ y: [0, -6, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-              >
-                <HStack gap={1.5}>
-                  <FaWhatsapp />
-                  <Text>Responde rápido</Text>
-                </HStack>
-              </MotionBox>
+            
 
               <MotionBox
                 position="absolute"
-                bottom={-5}
+                bottom={-8}
                 left={-5}
                 px={4}
                 py={3}
